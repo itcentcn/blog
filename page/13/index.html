@@ -1,0 +1,450 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>ITCENT' Blog - 折翼纸鹤的博客</title><meta name="author" content="折翼纸鹤"><meta name="copyright" content="折翼纸鹤"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="关于IT技术的博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ITCENT&#39; Blog">
+<meta property="og:url" content="http://blog.itcent.cn/page/13/">
+<meta property="og:site_name" content="ITCENT&#39; Blog">
+<meta property="og:description" content="关于IT技术的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://blog.itcent.cn/img/avatar.png">
+<meta property="article:author" content="折翼纸鹤">
+<meta property="article:tag" content="IT,it,code,linux,网络,开发,运维">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://blog.itcent.cn/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://blog.itcent.cn/page/13/"><link rel="preconnect"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":200,"languages":{"author":"作者: 折翼纸鹤","link":"链接: ","source":"来源: ITCENT' Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: '/pluginsSrc/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ITCENT\' Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-03-28 21:04:15'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 20
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">606</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/top/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="ITCENT' Blog"><img class="site-icon" src="/img/logo.png"/><span class="site-name">ITCENT' Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">ITCENT' Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="http://www.itcent.cn" target="_blank" title="ITCENT"><i class="fas fa-house-user"></i></a><a class="social-icon" href="http://code.itcent.cn" target="_blank" title="Code"><i class="fas fa-code"></i></a><a class="social-icon" href="http://linux.itcent.cn" target="_blank" title="Linux"><i class="fab fa-linux"></i></a><a class="social-icon" href="http://github.com/itcentcn" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:admin@itcent.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/sysctl/" title="sysctl"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="sysctl"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/sysctl/" title="sysctl">sysctl</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-23T03:43:50.000Z" title="发表于 2023-09-23 11:43:50">2023-09-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">时动态地修改内核的运行参数
+补充说明sysctl命令 被用于在内核运行时动态地修改内核的运行参数，可用的内核参数在目录/proc/sys中。它包含一些TCP&#x2F;ip堆栈和虚拟内存系统的高级选项， 这可以让有经验的管理员提高引人注目的系统性能。用sysctl可以读取设置超过五百个系统变量。
+语法1sysctl(选项)(参数)
+
+选项1234567-n：打印值时不打印关键字；-e：忽略未知关键字错误；-N：仅打印名称；-w：当改变sysctl设置时使用此项；-p：从配置文件“/etc/sysctl.conf”加载内核参数设置；-a：打印当前所有可用的内核参数变量和值；-A：以表格方式打印当前所有可用的内核参数变量和值。
+
+参数变量&#x3D;值：设置内核参数对应的变量值。
+实例查看所有可读变量：
+sysctl -a
+读一个指定的变量，例如kern.maxproc：
+sysctl kern.maxproc kern.maxproc: 1044
+要设置一个指定的变量，直接用variable=value这样的语法：
+12sysctl kern.maxfiles=5000kern.maxf ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/netstat/" title="netstat"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="netstat"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/netstat/" title="netstat">netstat</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-13T22:36:12.000Z" title="发表于 2023-09-14 06:36:12">2023-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">查看Linux中网络系统状态信息
+补充说明netstat命令 用来打印Linux中网络系统的状态信息，可让你得知整个Linux系统的网络情况。
+语法1netstat(选项)
+
+选项123456789101112131415161718192021222324-a或--all：显示所有连线中的Socket；-A&lt;网络类型&gt;或--&lt;网络类型&gt;：列出该网络类型连线中的相关地址；-c或--continuous：持续列出网络状态；-C或--cache：显示路由器配置的快取信息；-e或--extend：显示网络其他相关信息；-F或--fib：显示FIB；-g或--groups：显示多重广播功能群组组员名单；-h或--help：在线帮助；-i或--interfaces：显示网络界面信息表单；-l或--listening：显示监控中的服务器的Socket；-M或--masquerade：显示伪装的网络连线；-n或--numeric：直接使用ip地址，而不通过域名服务器；-N或--netlink或--symbolic：显示网络硬件外围设备的符号连接名称；-o或--timers：显 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/lsattr/" title="lsattr"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="lsattr"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/lsattr/" title="lsattr">lsattr</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-11T13:50:57.000Z" title="发表于 2023-09-11 21:50:57">2023-09-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">查看文件的第二扩展文件系统属性
+补充说明lsattr命令 用于查看文件的第二扩展文件系统属性。
+语法1lsattr(选项)(参数)
+
+选项12345-E：可显示设备属性的当前值，但这个当前值是从用户设备数据库中获得的，而不是从设备直接获得的。-D：显示属性的名称，属性的默认值，描述和用户是否可以修改属性值的标志。-R：递归的操作方式；-V：显示指令的版本信息；-a：列出目录中的所有文件，包括隐藏文件。
+
+lsattr经常使用的几个选项-D，-E，-R这三个选项不可以一起使用，它们是互斥的，经常使用的还有-l,-H，使用lsattr时，必须指出具体的设备名，用-l选项指出要显示设备的逻辑名称，否则要用-c，-s，-t等选项唯一的确定某个已存在的设备。
+参数文件：指定显示文件系统属性的文件名。
+实例12lsattr -E -l rmt0 -Hlsattr -EO -l rmt0
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/slocate/" title="slocate"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="slocate"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/slocate/" title="slocate">slocate</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-11T06:53:20.000Z" title="发表于 2023-09-11 14:53:20">2023-09-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">命令查找文件或目录
+补充说明slocate命令 是一个命令查找文件或目录。slocate本身具有一个数据库，里面存放了系统中文件与目录的相关信息。
+语法1slocate [-u][--help][--version][-d &lt;目录&gt;][查找的文件]
+
+选项1234-d&lt;目录&gt;或--database=&lt;目录&gt; 　指定数据库所在的目录。-u 　更新slocate数据库。--help 　显示帮助。--version 　显示版本信息。
+
+实例使用指令”slocate”显示文件名中含有关键字”fdisk”的文件路径信息，输入如下命令：
+1$ slocate fdisk #显示文件名中含有fdisk关键字的文件的路径信息 
+
+执行以上命令后，指令执行的输出信息如下：
+12345678$ slocate fdisk #显示文件名中含有fdisk 关键字的文件的路径信息  /root/cfdisk        #搜索到的文件路径列表  /root/fdisk  /root/sfdisk  /usr/include/grub/ieee1275/ofdisk.h  / ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/col/" title="col"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="col"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/col/" title="col">col</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-10T06:47:42.000Z" title="发表于 2023-09-10 14:47:42">2023-09-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">过滤控制字符
+补充说明col命令 是一个标准输入文本过滤器，它从标注输入设备读取文本内容，并把内容显示到标注输出设备。在许多UNIX说明文件里，都有RLF控制字符。当我们运用shell特殊字符&gt;和&gt;&gt;，把说明文件的内容输出成纯文本文件时，控制字符会变成乱码，col命令则能有效滤除这些控制字符。
+语法1col(选项)
+
+选项1234-b：过滤掉所有的控制字符，包括RLF和HRLF；-f：滤掉RLF字符，但允许将HRLF字符呈现出来；-x：以多个空格字符来表示跳格字符；-l&lt;缓冲区列数&gt;：预设的内存缓冲区有128列，用户可以自行指定缓冲区的大小。
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/lvreduce/" title="lvreduce"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="lvreduce"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/lvreduce/" title="lvreduce">lvreduce</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-10T01:58:35.000Z" title="发表于 2023-09-10 09:58:35">2023-09-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">收缩逻辑卷空间
+补充说明lvreduce命令 用于减少LVM逻辑卷占用的空间大小。使用lvreduce命令收缩逻辑卷的空间大小有可能会删除逻辑卷上已有的数据，所以在操作前必须进行确认。
+语法1lvreduce(选项)(参数)
+
+选项12-L：指定逻辑卷的大小，单位为“kKmMgGtT”字节；-l：指定逻辑卷的大小（LE数）。
+
+参数逻辑卷：指定要操作的逻辑卷对应的设备文件。
+实例使用lvreduce命令减少指定的逻辑卷的空间大小。在命令行中输入下面的命令：
+1[root@localhost ~]# lvreduce -L -50M /dev/vg1000/lvol0     #将逻辑卷的空间大小减少50M
+
+输出信息如下：
+1234......省略部分输出内容......  Do you really want to reduce lvol0? [y/n]: y  #确认操作    Reducing logical volume lvol0 to 252.00 MB    Logical volume lvol0 successfully resized
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/dpkg-query/" title="dpkg-query"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="dpkg-query"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/dpkg-query/" title="dpkg-query">dpkg-query</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-08T21:03:50.000Z" title="发表于 2023-09-09 05:03:50">2023-09-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">Debian Linux中软件包的查询工具
+补充说明dpkg-query命令 是Debian Linux中软件包的查询工具，它从dpkg软件包数据库中查询并辨识软件包的信息。
+语法1dpkg-query(选项)(参数)
+
+选项1234567-l：列出符合匹配模式的软件包；-s：查询软件包的状态信息；-L：显示软件包所安装的文件列表；-S：从安装的软件包中查询文件；-w：显示软件包信息；-c：显示软件包的控制文件路径；-p：显示软件包的细节。
+
+参数软件包名称：指定需要查询的软件包。
+实例查找文件file1在哪个包里安装：
+1dpkg-query -S file1
+
+列出ubuntu下所安装软件列表：
+1dpkg-query -W --showformat=&#x27;$&#123;Package&#125; $&#123;Version&#125;\n&#x27; &gt; filename
+
+查看软件包详细信息：
+1dpkg-query -s capistrano
+
+查看软件包安装时安装到系统的文件列表：
+1dpkg-query -L capistrano
+
+列出所有安装的包：
+1d ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/atop/" title="atop"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="atop"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/atop/" title="atop">atop</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-07T22:02:27.000Z" title="发表于 2023-09-08 06:02:27">2023-09-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">监控Linux系统资源与进程的工具
+补充说明[非内部程序，需要安装]它以一定的频率记录系统的运行状态，所采集的数据包含系统资源(CPU、内存、磁盘和网络)使用情况和进程运行情况，并能以日志文件的方式保存在磁盘中，服务器出现问题后，我们可获取相应的atop日志文件进行分析。atop是一款开源软件，我们可以从这里获得其源码和rpm安装包。
+语法1atop(选项)(参数)
+
+说明ATOP列：该列显示了主机名、信息采样日期和时间点
+PRC列：该列显示进程整体运行情况
+
+sys、usr字段分别指示进程在内核态和用户态的运行时间
+#proc字段指示进程总数
+#zombie字段指示僵尸进程的数量
+#exit字段指示atop采样周期期间退出的进程数量
+
+CPU列：该列显示CPU整体(即多核CPU作为一个整体CPU资源)的使用情况，我们知道CPU可被用于执行进程、处理中断，也可处于空闲状态(空闲状态分两种，一种是活动进程等待磁盘IO导致CPU空闲，另一种是完全空闲)
+
+sys、usr字段指示CPU被用于处理进程时，进程在内核态、用户态所占CPU的时间比例
+irq字段指示CPU被用于处理中断的时间比例
+i ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/apt-get/" title="apt-get"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="apt-get"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/apt-get/" title="apt-get">apt-get</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-06T23:33:12.000Z" title="发表于 2023-09-07 07:33:12">2023-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">Debian Linux发行版中的APT软件包管理工具
+补充说明apt-get命令 是Debian Linux发行版中的APT软件包管理工具。所有基于Debian的发行都使用这个包管理系统。deb包可以把一个应用的文件包在一起，大体就如同Windows上的安装文件。
+语法1apt-get [OPTION] PACKAGE
+
+选项1234567891011apt-get install  # 安装新包apt-get remove   # 卸载已安装的包（保留配置文件）apt-get purge    # 卸载已安装的包（删除配置文件）apt-get update   # 更新软件包列表apt-get upgrade  # 更新所有已安装的包apt-get autoremove   # 卸载已不需要的包依赖apt-get dist-upgrade # 自动处理依赖包升级apt-get autoclean    # 将已经删除了的软件包的.deb安装文件从硬盘中删除掉apt-get clean        # 删除软件包的安装包-c：指定配置文件。
+
+参数
+管理指令：对APT软件包的管理操 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/cmp/" title="cmp"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="cmp"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/cmp/" title="cmp">cmp</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-03T17:22:57.000Z" title="发表于 2023-09-04 01:22:57">2023-09-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">比较两个文件是否有差异
+补充说明cmp命令 用来比较两个文件是否有差异。当相互比较的两个文件完全一样时，则该指令不会显示任何信息。若发现有差异，预设会标示出第一个不通之处的字符和列数编号。若不指定任何文件名称或是所给予的文件名为“-”，则cmp指令会从标准输入设备读取数据。
+语法1cmp(选项)(参数)
+
+选项123456-c或--print-chars：除了标明差异处的十进制字码之外，一并显示该字符所对应字符；-i&lt;字符数目&gt;或--ignore-initial=&lt;字符数目&gt;：指定一个数目；-l或——verbose：标示出所有不一样的地方；-s或--quiet或——silent：不显示错误信息；-v或——version：显示版本信息；--help：在线帮助。
+
+参数目录：比较两个文件的差异。
+实例使用cmp命令比较文件”testfile”和文件”testfile1”两个文件，则输入下面的命令：
+1cmp testfile testfile1            #比较两个指定的文件
+
+在上述指令执行之前，使用cat命令查看两个指定的文件内容，如下所示：
+123 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/12/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#content-inner">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/#content-inner">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/61/#content-inner">61</a><a class="extend next" rel="next" href="/page/14/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">折翼纸鹤</div><div class="author-info__description">Welcome to ITCENT' Blog.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">606</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/itcentcn"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="http://www.itcent.cn" target="_blank" title="ITCENT"><i class="fas fa-house-user"></i></a><a class="social-icon" href="http://code.itcent.cn" target="_blank" title="Code"><i class="fas fa-code"></i></a><a class="social-icon" href="http://linux.itcent.cn" target="_blank" title="Linux"><i class="fab fa-linux"></i></a><a class="social-icon" href="http://github.com/itcentcn" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:admin@itcent.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/docs/linux/centos/Linux%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%8D%A1%E5%90%8D%E7%A7%B0/" title="Linux自定义网卡名称之 CentOS 7"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux自定义网卡名称之 CentOS 7"/></a><div class="content"><a class="title" href="/docs/linux/centos/Linux%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%8D%A1%E5%90%8D%E7%A7%B0/" title="Linux自定义网卡名称之 CentOS 7">Linux自定义网卡名称之 CentOS 7</a><time datetime="2024-03-11T02:12:00.000Z" title="发表于 2024-03-11 10:12:00">2024-03-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/docs/linux/command/lpq/" title="lpq"><img src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="lpq"/></a><div class="content"><a class="title" href="/docs/linux/command/lpq/" title="lpq">lpq</a><time datetime="2024-02-17T22:19:51.000Z" title="发表于 2024-02-18 06:19:51">2024-02-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/docs/linux/command/e2fsck/" title="e2fsck"><img src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="e2fsck"/></a><div class="content"><a class="title" href="/docs/linux/command/e2fsck/" title="e2fsck">e2fsck</a><time datetime="2024-02-16T14:44:28.000Z" title="发表于 2024-02-16 22:44:28">2024-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/docs/linux/command/bzless/" title="bzless"><img src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="bzless"/></a><div class="content"><a class="title" href="/docs/linux/command/bzless/" title="bzless">bzless</a><time datetime="2024-02-15T14:06:43.000Z" title="发表于 2024-02-15 22:06:43">2024-02-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/docs/linux/command/gcov/" title="gcov"><img src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="gcov"/></a><div class="content"><a class="title" href="/docs/linux/command/gcov/" title="gcov">gcov</a><time datetime="2024-02-14T04:54:58.000Z" title="发表于 2024-02-14 12:54:58">2024-02-14</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">605</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux/centos/"><span class="card-category-list-name">CentOS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/"><span class="card-category-list-name">系统命令</span><span class="card-category-list-count">604</span></a></li></ul></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/linux/" style="font-size: 1.45em; color: rgb(72, 35, 50)">Linux</a><a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.15em; color: rgb(115, 59, 67)">操作系统</a><a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.15em; color: rgb(35, 91, 109)">网络</a><a href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/" style="font-size: 1.3em; color: rgb(27, 64, 24)">运维技术</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><span class="card-archive-list-count">22</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/01/"><span class="card-archive-list-date">一月 2024</span><span class="card-archive-list-count">19</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">23</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><span class="card-archive-list-count">26</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">24</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><span class="card-archive-list-count">19</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">19</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">606</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-01-18T02:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">370.5k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-03-28T13:04:12.391Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By 折翼纸鹤</div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/recordQuery"><img class="icp-icon" src="/img/icp.png"><span>京ICP备2022017766号-2</span></a><br><a target="_blank" rel="noopener" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402053911"><img class="icp-icon" src="https://beian.mps.gov.cn/web/resource/img/head-logo.png"><span>京公网安备11011402053911号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('/pluginsSrc/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('/pluginsSrc/typed.js/dist/typed.umd.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js').then(() => {
+    jinrishici.load(result =>{
+      if (true) {
+        const sub = []
+        const content = result.data.content
+        sub.unshift(content)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = result.data.content
+      }
+    })
+  })
+}
+typedJSFn.run(subtitleType)
+</script><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('/pluginsSrc/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="/pluginsSrc/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="/pluginsSrc/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

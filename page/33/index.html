@@ -1,0 +1,415 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>ITCENT' Blog - 折翼纸鹤的博客</title><meta name="author" content="折翼纸鹤"><meta name="copyright" content="折翼纸鹤"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="关于IT技术的博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ITCENT&#39; Blog">
+<meta property="og:url" content="http://blog.itcent.cn/page/33/">
+<meta property="og:site_name" content="ITCENT&#39; Blog">
+<meta property="og:description" content="关于IT技术的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://blog.itcent.cn/img/avatar.png">
+<meta property="article:author" content="折翼纸鹤">
+<meta property="article:tag" content="IT,it,code,linux,网络,开发,运维">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://blog.itcent.cn/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://blog.itcent.cn/page/33/"><link rel="preconnect"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":200,"languages":{"author":"作者: 折翼纸鹤","link":"链接: ","source":"来源: ITCENT' Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: '/pluginsSrc/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ITCENT\' Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-03-28 21:04:16'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 20
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">606</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/top/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="ITCENT' Blog"><img class="site-icon" src="/img/logo.png"/><span class="site-name">ITCENT' Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">ITCENT' Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="http://www.itcent.cn" target="_blank" title="ITCENT"><i class="fas fa-house-user"></i></a><a class="social-icon" href="http://code.itcent.cn" target="_blank" title="Code"><i class="fas fa-code"></i></a><a class="social-icon" href="http://linux.itcent.cn" target="_blank" title="Linux"><i class="fab fa-linux"></i></a><a class="social-icon" href="http://github.com/itcentcn" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:admin@itcent.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/grub/" title="grub"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="grub"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/grub/" title="grub">grub</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-27T18:02:17.000Z" title="发表于 2022-12-28 02:02:17">2022-12-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">多重引导程序grub的命令行shell工具
+补充说明grub命令 是多重引导程序grub的命令行shell工具。
+语法1grub(选项)
+
+选项1234567891011--batch：打开批处理模式；--boot-drive=&lt;驱动器&gt;：指定stage2的引导驱动器；--config-file&lt;配置文件&gt;：指定stage2的配置文件；--device-map=&lt;文件&gt;：指定设备的映射文件；--help：显示帮助信息；--install-partition=&lt;分区&gt;：指定stage2安装分区；--no-config-file：不使用配置文件；--no-pager：不使用内部分页器；--preset-menu：使用预设菜单；--probe-second-floppy：检测第二个软盘驱动器；--read-only：只读模式。
+
+实例利用grub命令来启动损坏的Linux系统，可能你的电脑因为某些原因损坏不能自动启动了。当然原因很多，可能的现象也很多。
+这里说一下这种情况下的处理方法，即：屏幕上提示grub&gt;，但你的硬盘上数据没有丢失，各 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/pigz/" title="pigz"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pigz"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/pigz/" title="pigz">pigz</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-27T06:15:32.000Z" title="发表于 2022-12-27 14:15:32">2022-12-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">可以用来解压缩文件，gzip的并行实现升级版
+补充说明pigz命令可以用来解压缩文件，最重要的是支持多线程并行处理，解压缩比gzip快。主页: http://zlib.net/pigz/
+语法12pigz [ -cdfhikKlLmMnNqrRtz0..9,11 ] [ -b blocksize ] [ -p threads ] [ -S suffix ] [ name ...  ]unpigz [ -cfhikKlLmMnNqrRtz ] [ -b blocksize ] [ -p threads ] [ -S suffix ] [ name ...  ]
+
+参数12345678910111213141516171819202122232425262728293031-0 to -9, -11       # Compression level (level 11, zopfli, is much slower)--fast, --best      # Compression levels 1 and 9 respectively-b, --blocksize mmm # Set  ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/lnstat/" title="lnstat"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="lnstat"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/lnstat/" title="lnstat">lnstat</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-27T01:26:25.000Z" title="发表于 2022-12-27 09:26:25">2022-12-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">显示Linux系统的网路状态
+补充说明lnstat命令 用来显示Linux系统的网路状态。
+语法1lnstat(选项)
+
+选项12345678-h：显示帮助信息；-V：显示指令版本信息；-c：指定显示网络状态的次数，每隔一定时间显示一次网络状态；-d：显示可用的文件或关键字；-i：指定两次显示网络状的间隔秒数；-k：只显示给定的关键字；-s：是否显示标题头；-w：指定每个字段所占的宽度。
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/reboot/" title="reboot"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="reboot"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/reboot/" title="reboot">reboot</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-26T23:17:55.000Z" title="发表于 2022-12-27 07:17:55">2022-12-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">重新启动正在运行的Linux操作系统
+补充说明reboot命令 用来重新启动正在运行的Linux操作系统。
+语法1reboot(选项)
+
+选项12345-d：重新开机时不把数据写入记录文件/var/tmp/wtmp。本参数具有“-n”参数效果；-f：强制重新开机，不调用shutdown指令的功能；-i：在重开机之前，先关闭所有网络界面；-n：重开机之前不检查是否有未结束的程序；-w：仅做测试，并不真正将系统重新开机，只会把重开机的数据写入/var/log目录下的wtmp记录文件。
+
+实例12reboot        //重开机。reboot -w     //做个重开机的模拟（只有纪录并不会真的重开机）。
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/xz/" title="xz"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="xz"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/xz/" title="xz">xz</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-26T00:16:32.000Z" title="发表于 2022-12-26 08:16:32">2022-12-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">POSIX 平台开发具有高压缩率的工具
+补充说明xz命令 XZ Utils 是为 POSIX 平台开发具有高压缩率的工具。它使用 LZMA2 压缩算法，生成的压缩文件比 POSIX 平台传统使用的 gzip、bzip2 生成的压缩文件更小，而且解压缩速度也很快。最初 XZ Utils 的是基于 LZMA-SDK 开发，但是 LZMA-SDK 包含了一些 WINDOWS 平台的特性，所以 XZ Utils 为以适应 POSIX 平台作了大幅的修改。XZ Utils 的出现也是为了取代 POSIX 系统中旧的 LZMA Utils。
+语法12xz(选项)(参数)xz [OPTION]... [FILE]...
+
+选项1234567891011121314151617181920-z, --compress    # 强制压缩-d, --decompress, --uncompress                  # force decompression-t, --test        # 测试压缩文件的完整性-l, --list        # 列出有关.xz文件的信息-k,  ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/yum/" title="yum"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="yum"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/yum/" title="yum">yum</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-25T16:14:40.000Z" title="发表于 2022-12-26 00:14:40">2022-12-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">基于RPM的软件包管理器
+补充说明yum命令 是在Fedora和RedHat以及SUSE中基于rpm的软件包管理器，它可以使系统管理人员交互和自动化地更新与管理RPM软件包，能够从指定的服务器自动下载RPM包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软体包，无须繁琐地一次次下载、安装。
+yum提供了查找、安装、删除某一个、一组甚至全部软件包的命令，而且命令简洁而又好记。
+语法1yum(选项)(参数)
+
+选项123456789-h：显示帮助信息；-y：对所有的提问都回答“yes”；-c：指定配置文件；-q：安静模式；-v：详细模式；-d：设置调试等级（0-10）；-e：设置错误等级（0-10）；-R：设置yum处理一个命令的最大等待时间；-C：完全从缓存中运行，而不去下载或者更新任何头文件。
+
+参数1234567891011121314install：安装rpm软件包；update：更新rpm软件包；check-update：检查是否有可用的更新rpm软件包；remove：删除指定的rpm软件包；list：显示软件包的信息；search：检查软件包的信息；info：显示指定 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/apk/" title="apk"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="apk"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/apk/" title="apk">apk</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-24T15:04:47.000Z" title="发表于 2022-12-24 23:04:47">2022-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">Alpine Linux 下的包管理工具
+使用实例123456apk install xxxapk search xxx # 支持正则apk info xxx # 查看包的详细信息apk show # list local package# 卸载并删除 包apk del openssh openntp vim
+
+升级upgrade命令升级系统已安装的所以软件包（一般包括内核），当然也可指定仅升级部分软件包（通过-u或–upgrade选择指定）。
+123apk update # 更新最新本地镜像源apk upgrade # 升级软件apk add --upgrade busybox # 指定升级部分软件包
+
+搜索1234apk search # 查找所以可用软件包apk search -v # 查找所以可用软件包及其描述内容apk search -v &#x27;acf*&#x27; # 通过软件包名称查找软件包apk search -v -d &#x27;docker&#x27; # 通过描述文件查找特定的软件包
+
+查看包信息info命令用于显示软件包的信息。
+123apk info  ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/dhcpd/" title="dhcpd"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="dhcpd"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/dhcpd/" title="dhcpd">dhcpd</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-23T10:10:02.000Z" title="发表于 2022-12-23 18:10:02">2022-12-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">运行DHCP服务器
+语法1dhcpd [选项] [网络接口]
+
+选项12345678910111213-p &lt;端口&gt; 指定dhcpd监听的端口-f 作为前台进程运行dhcpd-d 启用调试模式-q 在启动时不显示版权信息-t 简单地测试配置文件的语法是否正确的，但不会尝试执行任何网络操作-T 可以用来测试租约数据库文件-4 运行DHCP服务器-6 运行DHCPv6服务器-s &lt;服务器&gt; 指定发送回复的服务器-cf &lt;配置文件&gt; 指定配置文件-lf &lt;租约文件&gt; 指定租约文件-pf &lt;PID文件&gt; 指定PID文件-tf &lt;跟踪输出文件&gt; 指定文件记录DHCP服务器的整个启动状态
+
+例子对DHCP服务器进行排错。
+1234567891011121314151617181920[root@localhost ~]# dhcpdInternetSystems Consortium DHCP Server 4.1.1-P1Copyright2004-2010 Internet Systems Consortium.All r ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/pwconv/" title="pwconv"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pwconv"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/pwconv/" title="pwconv">pwconv</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-23T02:08:10.000Z" title="发表于 2022-12-23 10:08:10">2022-12-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">用来开启用户的投影密码
+补充说明pwconv命令 用来开启用户的投影密码。Linux系统里的用户和群组密码，分别存放在名称为passwd和group的文件中， 这两个文件位于/etc目录下。因系统运作所需，任何人都得以读取它们，造成安全上的破绽。投影密码将文件内的密码改存在/etc目录下的shadow和gshadow文件内，只允许系统管理者读取，同时把原密码置换为”x”字符，有效的强化了系统的安全性。
+语法1pwconv
+
+实例12cat /etc/passwd | grep testtest:x:3001:3001::/home/test:/bin/sh
+
+此时可以发现密码段是x
+12cat /etc/shadow | grep testtest:$6$nYOEWamm$bz07nlv/.RgJufb3FAqJJeULfwybzgxmrWqbk7O4vI0KsT6N.ujrh6dDIUcAJdfjksyuyAFDPIngZeD3cgcf.0:15022:0:99999:7:::
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/docs/linux/command/column/" title="column"><img class="post-bg" src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="column"></a></div><div class="recent-post-info"><a class="article-title" href="/docs/linux/command/column/" title="column">column</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-22T14:21:25.000Z" title="发表于 2022-12-22 22:21:25">2022-12-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">Linux</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/">系统命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">Linux</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/">运维技术</a></span></div><div class="content">按列格式化输出文件
+概要1column [options] [file ...]
+
+主要用途
+将单列数据整理为多列显示，每行宽度可以指定，超出的部分自动换行。
+将多列数据进行快速整理，对齐每列的字符。
+
+参数file（可选），当没有指定文件时，默认会从标准输入读取，因此可以配合管道符使用。
+选项1234567-c, --columns &lt;width&gt;           输出宽度（以字符数表示）-t, --table                     创建一个表格（每列字符会对齐）-s, --separator &lt;string&gt;        指定识别表格的分隔符-o, --output-separator &lt;string&gt; 输出表格的列分隔符，默认为两个空格-x, --fillrows                  在列之前填充行-h, --help                      显示此帮助-V, --version                   输出版本信息
+
+返回值格式化排列后的字符串。
+示例
+整理单列数据
+
+123 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/32/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/#content-inner">32</a><span class="page-number current">33</span><a class="page-number" href="/page/34/#content-inner">34</a><span class="space">&hellip;</span><a class="page-number" href="/page/61/#content-inner">61</a><a class="extend next" rel="next" href="/page/34/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">折翼纸鹤</div><div class="author-info__description">Welcome to ITCENT' Blog.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">606</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/itcentcn"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="http://www.itcent.cn" target="_blank" title="ITCENT"><i class="fas fa-house-user"></i></a><a class="social-icon" href="http://code.itcent.cn" target="_blank" title="Code"><i class="fas fa-code"></i></a><a class="social-icon" href="http://linux.itcent.cn" target="_blank" title="Linux"><i class="fab fa-linux"></i></a><a class="social-icon" href="http://github.com/itcentcn" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:admin@itcent.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/docs/linux/centos/Linux%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%8D%A1%E5%90%8D%E7%A7%B0/" title="Linux自定义网卡名称之 CentOS 7"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux自定义网卡名称之 CentOS 7"/></a><div class="content"><a class="title" href="/docs/linux/centos/Linux%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%8D%A1%E5%90%8D%E7%A7%B0/" title="Linux自定义网卡名称之 CentOS 7">Linux自定义网卡名称之 CentOS 7</a><time datetime="2024-03-11T02:12:00.000Z" title="发表于 2024-03-11 10:12:00">2024-03-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/docs/linux/command/lpq/" title="lpq"><img src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="lpq"/></a><div class="content"><a class="title" href="/docs/linux/command/lpq/" title="lpq">lpq</a><time datetime="2024-02-17T22:19:51.000Z" title="发表于 2024-02-18 06:19:51">2024-02-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/docs/linux/command/e2fsck/" title="e2fsck"><img src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="e2fsck"/></a><div class="content"><a class="title" href="/docs/linux/command/e2fsck/" title="e2fsck">e2fsck</a><time datetime="2024-02-16T14:44:28.000Z" title="发表于 2024-02-16 22:44:28">2024-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/docs/linux/command/bzless/" title="bzless"><img src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="bzless"/></a><div class="content"><a class="title" href="/docs/linux/command/bzless/" title="bzless">bzless</a><time datetime="2024-02-15T14:06:43.000Z" title="发表于 2024-02-15 22:06:43">2024-02-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/docs/linux/command/gcov/" title="gcov"><img src="/img/cover/linux-command.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="gcov"/></a><div class="content"><a class="title" href="/docs/linux/command/gcov/" title="gcov">gcov</a><time datetime="2024-02-14T04:54:58.000Z" title="发表于 2024-02-14 12:54:58">2024-02-14</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">605</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux/centos/"><span class="card-category-list-name">CentOS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux/%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4/"><span class="card-category-list-name">系统命令</span><span class="card-category-list-count">604</span></a></li></ul></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/linux/" style="font-size: 1.45em; color: rgb(72, 35, 50)">Linux</a><a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.15em; color: rgb(115, 59, 67)">操作系统</a><a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.15em; color: rgb(35, 91, 109)">网络</a><a href="/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/" style="font-size: 1.3em; color: rgb(27, 64, 24)">运维技术</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><span class="card-archive-list-count">22</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/01/"><span class="card-archive-list-date">一月 2024</span><span class="card-archive-list-count">19</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">23</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><span class="card-archive-list-count">26</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">24</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><span class="card-archive-list-count">19</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">19</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">606</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-01-18T02:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">370.5k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-03-28T13:04:12.391Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By 折翼纸鹤</div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/recordQuery"><img class="icp-icon" src="/img/icp.png"><span>京ICP备2022017766号-2</span></a><br><a target="_blank" rel="noopener" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011402053911"><img class="icp-icon" src="https://beian.mps.gov.cn/web/resource/img/head-logo.png"><span>京公网安备11011402053911号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('/pluginsSrc/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('/pluginsSrc/typed.js/dist/typed.umd.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js').then(() => {
+    jinrishici.load(result =>{
+      if (true) {
+        const sub = []
+        const content = result.data.content
+        sub.unshift(content)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = result.data.content
+      }
+    })
+  })
+}
+typedJSFn.run(subtitleType)
+</script><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('/pluginsSrc/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="/pluginsSrc/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="/pluginsSrc/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
